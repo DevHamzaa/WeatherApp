@@ -36,7 +36,7 @@ const getInfo = async (event) => {
       dataHide.classList.remove("data_hide");
     } catch {
       CityNameDisplay.innerText =
-        " Valid City Name Please enter a valid city name";
+        "Invalid City Name Please enter a valid city name";
       dataHide.classList.add("data_hide");
     }
   }
