@@ -1,5 +1,3 @@
-const env = require("env");
-env.config();
 self.addEventListener("DOMContentLoaded", () => {
   const submitBtn = document.getElementById("submitButton");
   const cityName = document.getElementById("cityName");
