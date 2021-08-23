@@ -15,7 +15,10 @@ self.addEventListener("DOMContentLoaded", () => {
       dataHide.classList.add("data_hide");
     } else {
       try {
-        let url = `https://api.openweathermap.org/data/2.5/weather?q="${cityValue}git "&units=metric&appid=${API_KEY}`;
+        let url =
+          "https://api.openweathermap.org/data/2.5/weather?q=" +
+          cityValue +
+          "&units=metric&appid=3fe1f7395c29e751245f0ff43969b6b3";
         const response = await fetch(url);
         const data = await response.json();
         const arrData = [data];
